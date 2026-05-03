@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next.In</title>
+    <title>Projects — Next.In</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <header class="mx-lg-4 mb-lg-2">
+    <header class="px-lg-4 site-header">
         <nav class="navbar navbar-expand-lg bg-body-white">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand fs-2" href="../">Next.<span id="diff">In</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         class="mb-2 bi bi-cursor-fill" viewBox="0 0 16 16">
@@ -22,437 +27,396 @@
                             d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z" />
                     </svg>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Next.In</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav nav-underline ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="../services/"><i class="bi bi-gear-wide-connected"></i> Services</a></li>
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../projects"><i class="bi bi-folder2"></i> Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../contact/"><i class="bi bi-telephone"></i> Contact Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../about/"><i class="bi bi-info-circle"></i> About</a></li>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1">
+                            <li class="nav-item"><a class="nav-link" href="../services/"><i
+                                        class="bi bi-gear-wide-connected"></i> Services</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="../projects/"><i
+                                        class="bi bi-folder2"></i> Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../contact/"><i class="bi bi-telephone"></i>
+                                    Contact Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../about/"><i class="bi bi-info-circle"></i>
+                                    About</a></li>
                         </ul>
                     </div>
                 </div>
-                
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="container">
-            <h1 class="mb-4">Projects</h1>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/Moxy.jfif" class="card-img-top" alt="Moxy1">
-                        <div class="card-body">
-                            <h5 class="card-title">LANDMARK GROUP, MOXY MARRIOTT HOTEL</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Andheri - Mumbai</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Project Manager</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Consultancy & Contracting, M.E.P Services,
-                                    ELV
-                                    Systems</p>
-                                <p><strong class="text-custom-primary">Description:</strong> Managed the Moxy Marriott Hotel project in Andheri,
-                                    Mumbai, serving as electrical consultants and contractors.</p>
-                                <ul>
-                                    <li>Installed, commissioned, and tested a 1000KVA compact substation, 500KVA DG set, PCC panel, APFC
-                                        panel, and Power Distribution Panels.</li>
-                                    <li>Oversaw completion of M.E.P services, ELV work (CCTV, PA, Access Control, Data, etc.), electrical
-                                        liaisoning, and interior work.</li>
-                                </ul>
+        <!-- Hero -->
+        <section class="projects-hero-v2">
+            <div class="hero-bg-grid" aria-hidden="true"></div>
+            <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+            <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <span class="eyebrow rise"><span class="dot"></span> Our Portfolio</span>
+                        <h1 class="hero-title-v2 rise-2">
+                            Projects delivered with
+                            <span class="text-custom-gradient">precision &amp; power</span>
+                        </h1>
+                        <p class="projects-lead-v2 rise-3">
+                            A curated selection of electrical, M.E.P and ELV projects executed across
+                            hospitality, commercial, industrial and residential spaces in Mumbai &amp; Pune.
+                        </p>
+                        <div class="hero-actions rise-4">
+                            <a href="#projects" class="btn btn-modern"><i class="bi bi-grid-3x3-gap-fill"></i> Browse
+                                projects</a>
+                            <a href="../contact/" class="btn-ghost"><i class="bi bi-chat-dots"></i> Talk to us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="hero-stats rise-5">
+                            <div class="stat-card">
+                                <div class="stat-num">20<span>+</span></div>
+                                <div class="stat-label">Projects Delivered</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-num">10<span>+</span></div>
+                                <div class="stat-label">Years of Excellence</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-num">4<span>+</span></div>
+                                <div class="stat-label">Sectors Served</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-num">100<span>%</span></div>
+                                <div class="stat-label">Compliance &amp; Handover</div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="container projects-section" id="projects">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 rise-4">
+
                 <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/Mercedes.jpg" class="card-img-top" alt="Mercedes">
-                        <div class="card-body">
-                            <h5 class="card-title">RATNSORB, MERCEDES BENZ FACTORY</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Chakan - Pune</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Project Manager</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Consultancy & Contracting, ELV Systems
-                                </p>
-                                <p><strong class="text-custom-primary">Description:</strong> Managed the Mercedes Benz Factory project in
-                                    Chakan,
-                                    Pune.</p>
-                                <ul>
-                                    <li>Installed, commissioned, and tested PCC panels and VFD control panels.</li>
-                                    <li>Oversaw completion of ELV work (CCTV, PA, Access Control, Data, etc.) and interior work.</li>
-                                </ul>
-                            </div>
+                    <article class="project-card h-100">
+                        <div class="project-media">
+                            <img src="../assets/Moxy.jfif" alt="Moxy Marriott Hotel">
+                            <span class="project-tag"><i class="bi bi-briefcase-fill"></i> Project Manager</span>
                         </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/Reliance_gm.png" class="card-img-top" alt="Reliance">
-                        <div class="card-body">
-                            <h5 class="card-title">RATNSORB, RELIANCE (AJSK) I SQUARE</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Goregaon - Mumbai</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Project Manager</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Consultancy & Contracting, M.E.P Services,
-                                    ELV
-                                    Systems</p>
-                                <p><strong class="text-custom-primary">Description:</strong> Managed the Reliance project in Goregaon, Mumbai.</p>
-                                <ul>
-                                    <li>Installed, commissioned, and tested PCC and MCC panels.</li>
-                                    <li>Oversaw completion of M.E.P services, ELV work (CCTV, PA, Access Control, Data, etc.), and interior
-                                        work.</li>
-                                </ul>
+                        <div class="project-body">
+                            <h3 class="project-title">Landmark Group — Moxy Marriott Hotel</h3>
+                            <p class="project-location"><i class="bi bi-geo-alt"></i> Andheri, Mumbai</p>
+                            <div class="tech-chips">
+                                <span class="chip">Electrical Consultancy</span>
+                                <span class="chip">M.E.P Services</span>
+                                <span class="chip">ELV Systems</span>
                             </div>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/ekta.jpeg" class="card-img-top" alt="EKTA Tripolis">
-                        <div class="card-body">
-                            <h5 class="card-title">EKTA WORLD, EKTA TRIPOLIS CLUB HOUSE</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Goregaon - Mumbai</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Project Manager</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Consultancy & Contracting, HVAC, M.E.P
-                                    Services, ELV Systems</p>
-                                <p><strong class="text-custom-primary">Description:</strong> Managed the Ekta Tripolis Club House project in
-                                    Goregaon,
-                                    Mumbai.</p>
-                                <ul>
-                                    <li>Installed, commissioned, and tested a 500KVA DG set, HVAC, and Power Distribution panels.</li>
-                                    <li>Oversaw completion of construction slab, M.E.P services, ELV work (CCTV, PA, Access Control, Data,
-                                        etc.), electrical liaisoning, and interior work.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/Crest.jpg" class="card-img-top" alt="CREST VENTURES">
-                        <div class="card-body">
-                            <h5 class="card-title">CREST VENTURES, CREST PARK VIEW</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Bandra West - Mumbai</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Design Engineer</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Contracting, Electrical Services, ELV Systems
-                                </p>
-                                <p><strong class="text-custom-primary">Description:</strong> Worked on the Crest Park View project as an electrical
-                                    contractor in Bandra West,
-                                    Mumbai.</p>
-                                <ul>
-                                    <li>Oversaw completion of construction slab, electrical services, ELV work (CCTV, PA, Access Control,
-                                        Data,
-                                        etc.), and liaisoning work.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/PR Platina.png" class="card-img-top" alt="pr platina">
-                        <div class="card-body">
-                            <h5 class="card-title">PR BUILDERS, PLATINA</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Santacruz West - Mumbai</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Design Engineer</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Contracting, Electrical Services, ELV Systems
-                                </p>
-                                <p><strong class="text-custom-primary">Description:</strong> Worked on the Platina project as an electrical contractor
-                                    in Santacruz West,
-                                    Mumbai.</p>
-                                <ul>
-                                    <li>Oversaw completion of construction slab, electrical services, ELV work (CCTV, PA, Access Control,
-                                        Data,
-                                        etc.), and liaisoning work.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/vera_mumbai.png" class="card-img-top" alt="vera">
-                        <div class="card-body">
-                            <h5 class="card-title">S. RAHEJA, VERA</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Vile Parle - Mumbai</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Project Manager</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Contracting, Electrical Services, ELV Systems
-                                </p>
-                                <p><strong class="text-custom-primary">Description:</strong> Managed the S. Raheja Vera project as an electrical
-                                    contractor in Vile Parle, Mumbai.</p>
-                                <ul>
-                                    <li>Oversaw completion of construction slab, electrical services, ELV work (CCTV, PA, Access Control,
-                                        Data, etc.), and liaisoning work.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/S-Raheja-New-Light.jpeg" class="card-img-top" alt="new light">
-                        <div class="card-body">
-                            <h5 class="card-title">S RAHEJA, NEW LIGHT</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Santacruz West - Mumbai</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Design Engineer</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Contracting, Electrical Services, ELV Systems
-                                </p>
-                                <p><strong class="text-custom-primary">Description:</strong> Worked on the S. Raheja New Light project as an
-                                    electrical contractor in Santacruz West, Mumbai.</p>
-                                <ul>
-                                    <li>Oversaw completion of construction slab, electrical services, ELV work (CCTV, PA, Access Control,
-                                        Data, etc.), and liaisoning work.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/ekta trinity.jpg" class="card-img-top" alt="ekta trinity">
-                        <div class="card-body">
-                            <h5 class="card-title">EKTA BUILDERS, EKTA TRINITY</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Santacruz West - Mumbai</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Site Engineer</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Contracting, Electrical Services, ELV Systems
-                                </p>
-                                <p><strong class="text-custom-primary">Description:</strong> Worked on the Ekta Trinity project as an electrical
-                                    contractor in Santacruz West, Mumbai.</p>
-                                <ul>
-                                    <li>Oversaw completion of construction slab, electrical services, ELV work (CCTV, PA, Access Control,
-                                        Data, etc.), and liaisoning work.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/Supereme.jpg" class="card-img-top" alt="Supereme">
-                        <div class="card-body">
-                            <h5 class="card-title">SUPREME BUILDERS, HEADQUARTER</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Bandra West - Mumbai</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Site Engineer</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Contracting, Electrical Services, ELV Systems
-                                </p>
-                                <p><strong class="text-custom-primary">Description:</strong> Worked on the Headquarter project as an electrical
-                                    contractor in Bandra West, Mumbai.</p>
-                                <ul>
-                                    <li>Oversaw completion of construction slab, electrical services, ELV work (CCTV, PA, Access Control,
-                                        Data, etc.), and liaisoning work.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/supreme-artveda.jpg" class="card-img-top" alt="Art veda">
-                        <div class="card-body">
-                            <h5 class="card-title">SUPREME BUILDERS, ART VEDA</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Pali Hill - Mumbai</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Site Engineer</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Contracting, Electrical Services, ELV Systems
-                                </p>
-                                <p><strong class="text-custom-primary">Description:</strong> Worked on the Art Veda project as an electrical
-                                    contractor in Pali Hill, Mumbai.</p>
-                                <ul>
-                                    <li>Oversaw completion of construction slab, electrical services, ELV work (CCTV, PA, Access Control,
-                                        Data, etc.), and liaisoning work.</li>
-                                </ul>
-                            </div>
-                            </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/abraj-al-bait-tower.jpg" class="card-img-top" alt="abraj-al-bait-tower">
-                        <div class="card-body">
-                            <h5 class="card-title">ABRAJ AL BAIT</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Royal Clock Tower - Mecca, Saudi Arabia</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Electrical Foreman</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Panels Operation & Maintenance</p>
-                                <p><strong class="text-custom-primary">Description:</strong> Managed the clock tower project in Mecca, Saudi Arabia
-                                    as
-                                    an electrical foreman.</p>
-                                <ul>
-                                    <li>Managed the operation and maintenance of electrical panels (PCC, MCC, IMCC, APFC, VFD, etc.).</li>
-                                </ul>
-                            </div>
-                            </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/Hikal.jpg" class="card-img-top" alt="Hikal">
-                        <div class="card-body">
-                            <h5 class="card-title">HIKAL LTD</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Panoli GIDC</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Engineer</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Panels Manufacturing & Assembly</p>
-                                <p><strong class="text-custom-primary">Description:</strong> Worked on the HIKAL LTD project in Panoli GIDC.</p>
-                                <ul>
-                                    <li>Manufactured and assembled a 5000A incomer PCC panel, a 3200A incomer IMCC with VFD panel, and an
-                                        MCC panel.
-                                    </li>
-                                    <li>Installed, commissioned, and tested the PCC panel, MCC panel, and VFD control panels.</li>
-                                </ul>
-                            </div>
-                            </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/PI.png" class="card-img-top" alt="PI Industries">
-                        <div class="card-body">
-                            <h5 class="card-title">PI INDUSTRIES</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Panoli GIDC</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Engineer</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Panels Manufacturing & Assembly</p>
-                                <p><strong class="text-custom-primary">Description:</strong> Worked on projects at PI Industries in Panoli GIDC.</p>
-                                <ul>
-                                    <li>Manufactured and assembled a 6300A incomer PCC panel with a 3200A DG incomer and a 5000A bus
-                                        coupler.</li>
-                                    <li>Manufactured and assembled a 2500 KVAR APFC panel, a 1200A incomer IMCC with VFD panel, and a bus
-                                        duct for
-                                        an 11 kV transformer.</li>
-                                </ul>
-                            </div>
-                            </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/Sajjan.jpg" class="card-img-top" alt="Sajjan">
-                        <div class="card-body">
-                            <h5 class="card-title">SAJJAN LTD</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Ankleshwar GIDC</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Engineer</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Panels Manufacturing & Assembly</p>
-                                <p><strong class="text-custom-primary">Description:</strong> Worked on a project for Sajjan Ltd in Ankleshwar
-                                    GIDC.
-                                </p>
-                                <ul>
-                                    <li>Manufactured and assembled a 1200A incomer MCC panel.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/Brakes.png" class="card-img-top" alt="Brakes India">
-                        <div class="card-body">
-                            <h5 class="card-title">BRAKES INDIA</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Jhagadia GIDC</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Engineer</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Panels Manufacturing & Assembly</p>
-                                <p><strong class="text-custom-primary">Description:</strong> Worked on a project for Brakes India in Jhagadia
-                                    GIDC.
-                                </p>
-                                <ul>
-                                    <li>Manufactured and assembled a 5000A incomer with a 5000A DG incomer, a 3200A bus coupler, and a 3200
-                                        KVAR
-                                        APFC panel.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/Bajaj.jpg" class="card-img-top" alt="Bajaj Finance">
-                        <div class="card-body">
-                            <h5 class="card-title">BAJAJ FINANCE</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Cerebrum - Pune</h6>
-                            <div class="card-text">
-                                <p><strong class="text-custom-primary">Role:</strong> Site Engineer</p>
-                                <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Installations, Lighting & Power, HVAC, Access
-                                    Control, PA Systems, UPS,
-                                    CCTV</p>
-                                <p><strong class="text-custom-primary">Description:</strong> Worked as a site engineer on a project for Bajaj
-                                    Finance
-                                    at Cerebrum, Pune.</p>
-                                <ul>
-                                    <li>Completed electrical work including lighting, power, AHU, HVAC, access control, PA systems, UPS
-                                        systems, and
-                                        CCTV installation.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="../assets/Bislery.png" class="card-img-top" alt="Bisleri">
-                        <div class="card-body">
-                            <h5 class="card-title">BISLERI</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">MIDC - Mumbai</h6>
-                            <p><strong class="text-custom-primary">Role:</strong> Electrician</p>
-                            <p><strong class="text-custom-primary">Tech Stack:</strong> Electrical Installations, Lighting & Power, Panel
-                                Installation, Cable Termination
-                            </p>
-                            <p><strong class="text-custom-primary">Description:</strong> Worked as an electrician on a project for Bisleri at
-                                MIDC, Mumbai.</p>
-                            <ul>
-                                <li>Completed lighting and power installations, panel installation, cable termination, and related
-                                    tasks.</li>
+                            <p class="project-desc">Managed the Moxy Marriott project end-to-end — from compact
+                                substation to full interior fit-out.</p>
+                            <ul class="project-points">
+                                <li><i class="bi bi-check2"></i> Installed &amp; commissioned compact substation, 500
+                                    KVA DG, PCC, APFC &amp; PDB panels</li>
+                                <li><i class="bi bi-check2"></i> Full M.E.P, ELV (CCTV, PA, Access Control, Data),
+                                    liaisoning &amp; interiors</li>
                             </ul>
                         </div>
-                        </div>
-                    </div>                    
+                    </article>
                 </div>
-            </div>               
+
+                <div class="col">
+                    <article class="project-card h-100">
+                        <div class="project-media">
+                            <img src="../assets/Mercedes.jpg" alt="Mercedes Benz Factory">
+                            <span class="project-tag"><i class="bi bi-briefcase-fill"></i> Project Manager</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Ratnsorb — Mercedes Benz Factory</h3>
+                            <p class="project-location"><i class="bi bi-geo-alt"></i> Chakan, Pune</p>
+                            <div class="tech-chips">
+                                <span class="chip">Electrical</span>
+                                <span class="chip">ELV Systems</span>
+                            </div>
+                            <p class="project-desc">Delivered electrical &amp; low-voltage systems for the Mercedes Benz
+                                manufacturing facility.</p>
+                            <ul class="project-points">
+                                <li><i class="bi bi-check2"></i> Installed, commissioned &amp; tested PCC and VFD
+                                    control panels</li>
+                                <li><i class="bi bi-check2"></i> Completed ELV (CCTV, PA, Access Control, Data) &amp;
+                                    interior works</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="project-card h-100">
+                        <div class="project-media">
+                            <img src="../assets/Reliance_gm.png" alt="Reliance I Square">
+                            <span class="project-tag"><i class="bi bi-briefcase-fill"></i> Project Manager</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Ratnsorb — Reliance (AJSK) I Square</h3>
+                            <p class="project-location"><i class="bi bi-geo-alt"></i> Goregaon, Mumbai</p>
+                            <div class="tech-chips">
+                                <span class="chip">Electrical</span>
+                                <span class="chip">M.E.P</span>
+                                <span class="chip">ELV</span>
+                            </div>
+                            <p class="project-desc">Managed the Reliance I Square commercial project from panel install
+                                to handover.</p>
+                            <ul class="project-points">
+                                <li><i class="bi bi-check2"></i> Installed, commissioned &amp; tested PCC and MCC panels
+                                </li>
+                                <li><i class="bi bi-check2"></i> Full M.E.P, ELV (CCTV, PA, Access Control, Data) &amp;
+                                    interiors</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="project-card h-100">
+                        <div class="project-media">
+                            <img src="../assets/ekta.jpeg" alt="EKTA Tripolis Club House">
+                            <span class="project-tag"><i class="bi bi-briefcase-fill"></i> Project Manager</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Ekta World — Ekta Tripolis Club House</h3>
+                            <p class="project-location"><i class="bi bi-geo-alt"></i> Goregaon, Mumbai</p>
+                            <div class="tech-chips">
+                                <span class="chip">Electrical</span>
+                                <span class="chip">M.E.P</span>
+                                <span class="chip">ELV</span>
+                            </div>
+                            <p class="project-desc">Clubhouse build-out covering slab, M.E.P, ELV and interior
+                                finishing.</p>
+                            <ul class="project-points">
+                                <li><i class="bi bi-check2"></i> Installed 500 KVA DG set, HVAC &amp; Power Distribution
+                                    panels</li>
+                                <li><i class="bi bi-check2"></i> Oversaw slab, M.E.P, ELV, liaisoning &amp; interior
+                                    work</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="project-card h-100">
+                        <div class="project-media">
+                            <img src="../assets/Crest.jpg" alt="Crest Park View">
+                            <span class="project-tag"><i class="bi bi-rulers"></i> Design Engineer</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Crest Ventures — Crest Park View</h3>
+                            <p class="project-location"><i class="bi bi-geo-alt"></i> Bandra West, Mumbai</p>
+                            <div class="tech-chips">
+                                <span class="chip">Electrical Contracting</span>
+                                <span class="chip">ELV Systems</span>
+                            </div>
+                            <p class="project-desc">Acted as electrical contractor for the Crest Park View residential
+                                tower.</p>
+                            <ul class="project-points">
+                                <li><i class="bi bi-check2"></i> Completed slab, electrical services &amp; ELV (CCTV,
+                                    PA, Access Control, Data)</li>
+                                <li><i class="bi bi-check2"></i> Handled liaisoning &amp; compliance work</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="project-card h-100">
+                        <div class="project-media">
+                            <img src="../assets/PR Platina.png" alt="PR Platina">
+                            <span class="project-tag"><i class="bi bi-rulers"></i> Design Engineer</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">PR Builders — Platina</h3>
+                            <p class="project-location"><i class="bi bi-geo-alt"></i> Santacruz West, Mumbai</p>
+                            <div class="tech-chips">
+                                <span class="chip">Electrical Contracting</span>
+                                <span class="chip">ELV</span>
+                            </div>
+                            <p class="project-desc">Electrical contracting for the Platina residential project.</p>
+                            <ul class="project-points">
+                                <li><i class="bi bi-check2"></i> Completed slab, electrical services &amp; ELV work</li>
+                                <li><i class="bi bi-check2"></i> Handled liaisoning &amp; approvals</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="project-card h-100">
+                        <div class="project-media">
+                            <img src="../assets/vera_mumbai.png" alt="Vera">
+                            <span class="project-tag"><i class="bi bi-briefcase-fill"></i> Project Manager</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">S. Raheja — Vera</h3>
+                            <p class="project-location"><i class="bi bi-geo-alt"></i> Vile Parle, Mumbai</p>
+                            <div class="tech-chips">
+                                <span class="chip">Electrical Contracting</span>
+                                <span class="chip">Services</span>
+                                <span class="chip">ELV</span>
+                            </div>
+                            <p class="project-desc">Managed the Vera residential project as electrical contractor.</p>
+                            <ul class="project-points">
+                                <li><i class="bi bi-check2"></i> Installed &amp; commissioned panels and distribution
+                                    systems</li>
+                                <li><i class="bi bi-check2"></i> Full electrical services, ELV &amp; liaisoning</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="project-card h-100">
+                        <div class="project-media">
+                            <img src="../assets/S-Raheja-New-Light.jpeg" alt="New Light">
+                            <span class="project-tag"><i class="bi bi-rulers"></i> Design Engineer</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">S. Raheja — New Light</h3>
+                            <p class="project-location"><i class="bi bi-geo-alt"></i> Santacruz West, Mumbai</p>
+                            <div class="tech-chips">
+                                <span class="chip">Electrical Contracting</span>
+                                <span class="chip">ELV</span>
+                            </div>
+                            <p class="project-desc">Electrical contracting for the S. Raheja New Light project.</p>
+                            <ul class="project-points">
+                                <li><i class="bi bi-check2"></i> Completed slab, electrical services &amp; ELV work</li>
+                                <li><i class="bi bi-check2"></i> Handled liaisoning &amp; approvals</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="project-card h-100">
+                        <div class="project-media">
+                            <img src="../assets/ekta trinity.jpg" alt="Ekta Trinity">
+                            <span class="project-tag"><i class="bi bi-hammer"></i> Site Engineer</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Ekta Builders — Ekta Trinity</h3>
+                            <p class="project-location"><i class="bi bi-geo-alt"></i> Santacruz West, Mumbai</p>
+                            <div class="tech-chips">
+                                <span class="chip">Electrical Contracting</span>
+                                <span class="chip">ELV</span>
+                            </div>
+                            <p class="project-desc">Electrical contracting for the Ekta Trinity residential tower.</p>
+                            <ul class="project-points">
+                                <li><i class="bi bi-check2"></i> Completed slab, electrical services &amp; ELV work</li>
+                                <li><i class="bi bi-check2"></i> Handled liaisoning &amp; approvals</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="project-card h-100">
+                        <div class="project-media">
+                            <img src="../assets/Supereme.jpg" alt="Supreme Headquarter">
+                            <span class="project-tag"><i class="bi bi-hammer"></i> Site Engineer</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Supreme Builders — Headquarter</h3>
+                            <p class="project-location"><i class="bi bi-geo-alt"></i> Bandra West, Mumbai</p>
+                            <div class="tech-chips">
+                                <span class="chip">Electrical Contracting</span>
+                                <span class="chip">ELV</span>
+                            </div>
+                            <p class="project-desc">Electrical contracting for the Supreme Headquarter project.</p>
+                            <ul class="project-points">
+                                <li><i class="bi bi-check2"></i> Completed slab, electrical services &amp; ELV (CCTV,
+                                    PA, Access, Data)</li>
+                                <li><i class="bi bi-check2"></i> Handled liaisoning &amp; compliance</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="project-card h-100">
+                        <div class="project-media">
+                            <img src="../assets/Bislery.png" alt="Bislery">
+                            <span class="project-tag"><i class="bi bi-plug"></i> Electrician</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title mt-2">Bisleri — MIDC</h3>
+                            <p class="project-location"><i class="bi bi-geo-alt"></i> MIDC, Mumbai</p>
+                            <div class="tech-chips">
+                                <span class="chip">Lighting &amp; Power</span>
+                                <span class="chip">Panel Installation</span>
+                                <span class="chip">Cable Termination</span>
+                            </div>
+                            <p class="project-desc">Executed electrical site works on the Bisleri project at MIDC.</p>
+                            <ul class="project-points">
+                                <li><i class="bi bi-check2"></i> Lighting &amp; power installations</li>
+                                <li><i class="bi bi-check2"></i> Panel installation &amp; cable termination</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-banner-v2 rise-5">
+                    <div class="cta-bg-ring" aria-hidden="true"></div>
+                    <div class="cta-bg-ring cta-bg-ring-2" aria-hidden="true"></div>
+                    <div class="cta-content">
+                        <span class="cta-eyebrow"><i class="bi bi-lightning-charge-fill"></i> Let's build
+                            together</span>
+                        <h2 class="cta-heading">Have a project <span class="text-custom-gradient">in mind?</span></h2>
+                        <p class="cta-sub">From concept and design to commissioning and handover — let's power what's
+                            next for your space.</p>
+                        <div class="cta-actions">
+                            <a href="../contact/" class="btn btn-modern"><i class="bi bi-send"></i> Start a project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer class="bd-footer pt-4 pt-md-5 mt-5">
+
+    <footer class="bd-footer">
         <div class="container text-center">
-            <div class="container border border-1 rounded bg-light" style="max-width: 400px">
-                <p class="fw-bold fs-5 mt-2">Get in touch with Next.in</p>
-                <div class="container text-center">
-                    <ul class="list-unstyled row row-cols-auto gx-5 justify-content-center fs-5">
-                        <li><a class="col text-reset" href="tel:+919769475889"><i class="bi bi-telephone"></i></a></li>
-                        <li><a class="col text-reset" href="mailto:ashrafhusain0989@gmail.com"><i
-                                    class="bi bi-envelope"></i></a></li>
-                        <li><a class="col text-reset" href="https://www.instagram.com/mr.ashraf09/"><i
-                                    class="bi bi-facebook"></i></a></li>
-                        <li><a class="col text-reset" href="https://www.instagram.com/mr.ashraf09/"><i
-                                    class="bi bi-instagram"></i></a></li>
-                        <li><a class="col text-reset" href="https://www.instagram.com/in/nextin/"><i
-                                    class="bi bi-linkedin"></i></a></li>
-                    </ul>
-                </div>
+            <div class="contact-card rise-5">
+                <h5>Get in touch with Next.in</h5>
+                <ul class="social-list">
+                    <li><a href="tel:+919769475889" aria-label="Phone"><i class="bi bi-telephone"></i></a></li>
+                    <li><a href="mailto:nextinconsultant@outlook.com" aria-label="Email"><i
+                                class="bi bi-envelope"></i></a></li>
+                    <li><a href="https://www.instagram.com/mr.ashraf09/" aria-label="Facebook"><i
+                                class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/next_in_interior_ai_consultant/" aria-label="Instagram"><i
+                                class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/in/nextin/" aria-label="LinkedIn"><i
+                                class="bi bi-linkedin"></i></a></li>
+                </ul>
             </div>
-            <br>
-            <div class="container">
-                <p>&copy; 2025 Next.In</p>
-            </div>
+            <p class="copyright">&copy; 2026 Next.In</p>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous">
-    </script>
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
